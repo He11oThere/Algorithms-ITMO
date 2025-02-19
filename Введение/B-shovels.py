@@ -1,6 +1,6 @@
 def count_pairs(n: int) -> int:
     if 2 * n < 10:
-        return 0
+        return n * (n - 1) // 2
 
     base = 1
     while base * 10 <= 2 * n:
